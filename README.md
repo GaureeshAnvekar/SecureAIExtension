@@ -1,6 +1,6 @@
 # SecureAI Framework - Security + Interception
 
-A TypeScript framework for overriding and intercepting features in browser-based web applications. This framework provides a modular, configurable system for intercepting prompts, blocking analytics, hiding UI elements, and modifying responses. It can be used as an extension or directly as a console script.
+A TypeScript framework for overriding and intercepting features in popular browser-based web applications - "meta.ai", "openrouter.ai", "grok.com". This framework provides a modular, configurable system for intercepting prompts, blocking analytics, hiding UI elements, and modifying responses. It can be used as an extension or directly as a console script.
 
 ### As a Browser Extension
 
