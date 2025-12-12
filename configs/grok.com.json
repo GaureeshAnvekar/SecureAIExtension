@@ -1,0 +1,33 @@
+{
+  "apps": [
+    {
+      "name": "Grok",
+      "urlPattern": "grok.com",
+      "selectors": {
+        "promptInput": "textarea[placeholder*='message'], textarea[placeholder*='Message'], textarea",
+        "submitButton": "button[type='submit'], button[aria-label*='Send'], button[aria-label*='send']",
+        "attachmentButton": [
+          "button[aria-label*='attach']",
+          "button[aria-label*='Attach']",
+          "button[aria-label*='upload']",
+          "button[aria-label*='Upload']"
+        ],
+        "conversationId": "[data-conversation-id], [data-id]",
+        "responseContainer": "[data-testid*='message'], [data-testid*='response'], .message, .response",
+        "responseText": "[data-testid*='message'] p, [data-testid*='response'] p, .message p, .response p"
+      },
+      "interceptors": {
+        "prompt": false,
+        "attachment": false,
+        "analytics": true,
+        "response": false
+      },
+      "analyticsPatterns": [
+        "google-analytics.com",
+        "googletagmanager.com",
+        "analytics.google.com"
+      ]
+    }
+  ]
+}
+

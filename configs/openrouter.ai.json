@@ -1,0 +1,26 @@
+{
+  "apps": [
+    {
+      "name": "OpenRouter",
+      "urlPattern": "openrouter.ai",
+      "selectors": {
+        "promptInput": "textarea.w-full.bg-transparent.leading-6",
+        "submitButton": "svg.size-4[stroke='currentColor'][data-slot='icon'] > path[d='M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18']",
+        "attachmentButton": [
+          "button:has(svg.size-5 > path[d^='M18.97 3.659'])"
+        ],
+        "conversationId": "[data-conversation-id], [data-id], [data-chat-id]",
+        "responseContainer": "[data-testid*='message'], [data-testid*='response'], .message, .response, [class*='message']",
+        "responseText": "div.max-w-4xl.w-full div[data-message-id]"
+      },
+      "interceptors": {
+        "prompt": true,
+        "attachment": true,
+        "analytics": false,
+        "response": true,
+        "apiMode": "fetch"
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,8 @@
+node_modules/
+src/
+packages/*/src/
+*.tsbuildinfo
+.gitignore
+.npmignore
+examples/
+

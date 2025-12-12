@@ -1,0 +1,29 @@
+{
+  "name": "SecureAI-framework",
+  "version": "1.0.0",
+  "description": "Framework for overriding browser-based web application features",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "build": "npm run build:bundle && npm run build:loader && npm run build:core && npm run build:adapters && npm run build:main",
+    "build:bundle": "esbuild src/inject.ts --bundle --format=iife --outfile=dist/bundle.js",
+    "build:loader": "esbuild src/loader.ts --bundle --format=iife --outfile=dist/loader.js",
+    "build:core": "cd packages/core && npm run build",
+    "build:adapters": "cd packages/adapters && npm run build",
+    "build:main": "tsc -p tsconfig.main.json",
+    "clean": "rm -rf dist packages/*/dist",
+    "watch": "npm run build -- --watch"
+  },
+  "keywords": [
+    "browser",
+    "override",
+    "interceptor",
+    "analytics-blocker"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.14.54",
+    "typescript": "^5.0.0"
+  }
+}

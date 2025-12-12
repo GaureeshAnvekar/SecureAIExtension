@@ -1,0 +1,17 @@
+{
+  "name": "@SecureAI/adapters",
+  "version": "1.0.0",
+  "description": "App-specific adapters for the SecureAI framework",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["browser", "override", "adapter"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@SecureAI/core": "1.0.0"
+  }
+}
+

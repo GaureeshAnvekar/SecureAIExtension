@@ -1,0 +1,26 @@
+{
+  "apps": [
+    {
+      "name": "Meta AI",
+      "urlPattern": "meta.ai",
+      "selectors": {
+        "promptInput": "div[contenteditable='true'][aria-label='Ask anything...'][data-lexical-editor='true']",
+        "submitButton": "button[type='submit'], button[aria-label*='Send'], button[aria-label*='send']",
+        "attachmentButton": [
+          "div[role='button'][aria-label='Add media and more']"
+        ],
+        "conversationId": "[data-conversation-id], [data-id]",
+        "responseContainer": "div.x78zum5.xamitd3.x9f619.xh8yej3.x7sx7my.xf7dkkf.xv54qhq.x5yr21d.x8fhp0i.xz9dl7a, [data-testid*='message'], [data-testid*='response'], .message, .response",
+        "responseText": "div.x78zum5.xdt5ytf.x1na6gtj.xamitd3.x1ac2792.xf7dkkf.xlhpewt.xv54qhq.xrrkp5a.x1wj4aza.x1be37a"
+      },
+      "interceptors": {
+        "prompt": true,
+        "attachment": true,
+        "analytics": false,
+        "response": true,
+        "apiMode": "graphql"
+      }
+    }
+  ]
+}
+

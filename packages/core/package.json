@@ -1,0 +1,14 @@
+{
+  "name": "@SecureAI/core",
+  "version": "1.0.0",
+  "description": "Core framework for browser-based web application overrides",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["browser", "override", "interceptor"],
+  "author": "",
+  "license": "MIT"
+}
+
